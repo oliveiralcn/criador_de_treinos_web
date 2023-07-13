@@ -14,6 +14,15 @@ function coletar_dados_digitados() {
     return dados_digitados;
 }
 
+function abrirAba(numero_celular, mensagem) {
+    var numero_celular_editado = "+55" + numero_celular
+
+    var texto = mensagem
+
+    var url = "https://web.whatsapp.com/send?phone=" + numero_celular_editado + "&text=" + texto
+
+    window.open(url);
+  }
 
 function coletar_dados_selecionados() {
     
@@ -48,28 +57,34 @@ function criador_de_mensagem(nome, celular, sexo, classe, treino_montado) {
 }
 
 function visualisar_treino() {
-    document.getElementById("resultado").innerHTML = "Está funcionando!";
-}
 
-function executarFuncao() {
-    // Lógica da função
     var inputs = coletar_dados_digitados();
 
     var nome = inputs.nome;
 
-    var telefone = inputs.telefone
+    var telefone = inputs.telefone;
 
-    var selects = coletar_dados_selecionados()
+    var selects = coletar_dados_selecionados();
 
-    var sexo = selects.sexo
+    var sexo = selects.sexo;
 
-    var categoria = selects.categoria
+    var categoria = selects.categoria;
 
-    var nov_tre = selects.novo_treino
+    var nov_tre = selects.novo_treino;
 
     var texto = criador_de_mensagem(nome, telefone, sexo, categoria,nov_tre);
-  
-    // Exibir o resultado na div específica
+
     document.getElementById("resultado").innerHTML = texto;
+}
+
+function executarFuncao() {
+
+    var inputs = coletar_dados_digitados();
+
+    var telefone = inputs.telefone;
+
+    var texto = document.getElementById("resultado").textContent;
+    
+    abrirAba(telefone, texto);
   }
   
