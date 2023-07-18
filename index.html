@@ -3,58 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criador de Treinos 2.0</title>
-    <script src="script.js"></script>
+    <title>Criador de Treinos</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Sansita&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-    <div id="resultado">
-        <h1> PROJETO EM CONSTRUÇÃO</h1>
+    <div class="result">
+        <div class="card">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="card-inner"></div>
+        </div>
     </div>
-
-    <div class="bloco_info_user">
-        <div id="titulo_dados">
-            <h1>Insira aqui os dados do aluno:</h1>
-        </div>
-        <div id="inputs">
-                <input type="text" class="inp" id="nome" placeholder="Nome do aluno">
-                <input type="text" class="inp" id="telefone" placeholder="Numero celular">
+    <div class="data">
+        <div class="inputs">
+            <input id="name" placeholder="Nome do Aluno" type="text" name="text" class="input">
+            <input id="phone" placeholder="Numero celular" type="text" name="text" class="input">
         </div>
         
 
-        <div id="variaveis">
-            <select class="selecao" id="sexo">
-                <option value="0">Sexo</option>
-                <option value="1">Feminino</option>
-                <option value="2">Masculino</option>
-    
-            </select>
-    
-            <select class="selecao" id="categoria"> 
-                <option value="0">Categoria</option>
-                <option value="1">Infantil</option>
-                <option value="2">Iniciante</option>
-                <option value="3">Intermediário</option>
-                <option value="4">Avançado</option>
-            </select>
-
-        </div>
-        
-        <div id="check">
-            <Input type="checkbox" id="marcacao_novo_treino"></Input>
-            <label for="marcacao_novo_treino">Usar modelo pronto</label>
-        </div>
-
-        <div id="botoes">
-            <button onclick="visualisar_treino()">Ver</button>
-            <button onclick="executarFuncao()">Enviar</button>
-        </div>
         
     </div>
-
 </body>
 </html>
