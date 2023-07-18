@@ -5,38 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criador de Treinos</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="result">
+    <div class="container">
         <div class="card">
             <div class="circle"></div>
             <div class="circle"></div>
-            <div class="card-inner"></div>
-        </div>
-    </div>
-    <div class="data">
-        <div class="inputs">
-            <input id="name" placeholder="Nome do Aluno" type="text" name="text" class="input">
-            <input id="phone" placeholder="Numero celular" type="text" name="text" class="input">
-        </div>
+            <div class="card-inner">
+                <div class="inputs">
+                    <input id="name" placeholder="Nome do Aluno" type="text" name="text" class="input">
+                    <input id="phone" placeholder="Numero celular" type="text" name="text" class="input">
+                </div>
+                
+                <div class="selects">
+                    <select class = "select" id="sex">
+                      <option value="1">Sexo</option>
+                      <option value="2">Homem</option>
+                      <option value="3">Mulher</option>
+                    </select>
         
-        <div class="selects">
-            <select class = "select" id="sex">
-              <option value="1">Sexo</option>
-              <option value="2">Homem</option>
-              <option value="3">Mulher</option>
-            </select>
-
-            <select class = "select" id="level">
-                <option value="1">Nível</option>
-                <option value="2">Infantil</option>
-                <option value="3">Iniciante</option>
-                <option value="4">Intermediário</option>
-                <option value="5">Avançado</option>
-            </select>
-
+                    <select class = "select" id="level">
+                        <option value="1">Nível</option>
+                        <option value="2">Infantil</option>
+                        <option value="3">Iniciante</option>
+                        <option value="4">Intermediário</option>
+                        <option value="5">Avançado</option>
+                    </select>
+                </div>
+                <div class="container-select">
+                    <input type="checkbox" id="cbx" style="display: none;">
+                    <label for="cbx" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                            <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                    </label>
+                    <p>MODELO PRONTO</p>
+                </div>
+            </div>
         </div>
-        
     </div>
 </body>
 </html>
