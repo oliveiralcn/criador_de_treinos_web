@@ -58,6 +58,8 @@ body {
   }
 }
 
+
+
 .input {
   max-width: 600px;
   border: none;
@@ -104,5 +106,27 @@ body {
   margin: 10px 0 10px 20px;
   width: 400px;
   text-align: center;
+}
+
+.selects {
+  display: grid;
+  text-align: center;
+  vertical-align: center;
+}
+
+.select {
+  width: 100px;
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  border: solid 1px #555;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+.select option {
+  background-color: none;
+  columns: #000;
+
 }
 
