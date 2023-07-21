@@ -18,7 +18,7 @@ function coletarDados() {
 
     enviarDados(bx_data);
 
-    window.open("pages/table-page.html");
+    window.open("table-page.html");
 }
 
 function enviarDados(data) {
