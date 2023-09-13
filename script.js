@@ -57,3 +57,7 @@ function coletarCB() {
 
     return resposta;
 }
+
+function enviarMensagem() {
+    window.open("https://web.whatsapp.com/send?phone=+5583996280032&text=teste");
+}
